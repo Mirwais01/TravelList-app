@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-export default function Form() {
-  // const [items, setItems] = useState();
+export default function Form({ onAddItem }) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
+  const id = crypto.randomUUID();
   function handleSubmit(e) {
     e.preventDefault();
     if (!description) return;
-    const newItem = { description, quantity, id: Date.now(), packed: false };
-    console.log(newItem);
+    const newItem = { description, quantity, id, packed: false };
+    onAddItem(newItem);
 
     setDescription("");
     setQuantity(1);
