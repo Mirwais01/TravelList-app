@@ -1,7 +1,7 @@
 export default function Logo() {
   return (
-    <h1 className="md:text-7xl text-2xl sm:text-4xl p-7 font-mono tracking-widest font-extrabold bg-orange-400 text-center">
-      🏝 FAR AWAY 🧰
+    <h1 className="bg-orange-400 font-headFont text-center px-7 py-10 text-3xl sm:text-5xl tracking-widest md:text-6xl">
+      🏝FAR AWAY🧰
     </h1>
   );
 }
