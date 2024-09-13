@@ -24,6 +24,10 @@ function App() {
     );
   }
 
+  function onDeleteList() {
+    setItems([]);
+  }
+
   return (
     <div>
       <Logo />
@@ -32,6 +36,7 @@ function App() {
         items={items}
         handleDeleteItem={handleDeleteItem}
         handleToggleItem={handleToggleItem}
+        onDeleteList={onDeleteList}
       />
       <Stats items={items} />
     </div>
