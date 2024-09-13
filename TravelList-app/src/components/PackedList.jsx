@@ -43,7 +43,7 @@ export default function PackedList({
             id=""
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="text-zinc-800 md:px-4 py-1 bg-orange-100 rounded-2xl text-center md:text-left"
+            className="text-zinc-800 md:px-4 py-2 bg-orange-100 rounded-2xl text-center md:text-left"
           >
             <option value="input">Sort by input Order</option>
             <option value="description">Sort by Description</option>
@@ -51,7 +51,7 @@ export default function PackedList({
           </select>
           <button
             onClick={() => onDeleteList()}
-            className="bg-orange-100 text-zinc-800 rounded-2xl px-6 py-1 hover:shadow-lg hover:scale-105"
+            className="bg-orange-100 text-zinc-800 rounded-2xl px-6 py-2 hover:shadow-lg hover:scale-105"
           >
             Clear list
           </button>

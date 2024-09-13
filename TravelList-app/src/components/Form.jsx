@@ -26,7 +26,7 @@ export default function Form({ onAddItem }) {
           <select
             name=""
             id=""
-            className="text-zinc-900 bg-orange-100 outline-0 text-center rounded-lg py-1 md:py-2 md:px-5 md:rounded-3xl"
+            className="text-zinc-900 bg-orange-100 outline-0 text-center rounded-lg py-2 md:py-1 md:px-5 md:rounded-3xl"
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
           >
@@ -35,13 +35,13 @@ export default function Form({ onAddItem }) {
             })}
           </select>
           <input
-            className="px-7 py-1 mt-5 text-[16px] md:mt-0 rounded-lg md:rounded-3xl outline-none bg-orange-100"
+            className="px-7 py-2 mt-5 text-[16px] md:mt-0 rounded-lg md:rounded-3xl outline-none bg-orange-100"
             type="text"
             placeholder="Enter your items..."
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
-          <button className=" md:px-6 md:rounded-3xl text-lg rounded-lg bg-green-300 text-zinc-900 font-bold hover:shadow-lg hover:-translate-y-1 hover:duration-300">
+          <button className=" md:px-6 md:rounded-3xl text-lg rounded-lg py-2 md:py-0 bg-green-300 text-zinc-900 font-bold hover:shadow-lg hover:-translate-y-1 hover:duration-300">
             Add
           </button>
         </div>
